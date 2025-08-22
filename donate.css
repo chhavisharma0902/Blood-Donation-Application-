@@ -145,7 +145,7 @@ main {
     display: inline-block;
     text-decoration: none;
     color: black;
-    border: 1px solid #fff;
+    border: 0px ;
     padding: 12px 29px;
     font-size: 20px;
     background: transparent;
@@ -165,7 +165,6 @@ main {
     border: none;
 
 }
-
 .hero-btn:hover {
     border: 1px solid #DC143C;
     background: #DC143C;
@@ -173,9 +172,6 @@ main {
     color: #fff;
     width: 88%;
 }
-
-
-
 /*Footer*/
 .sec {
     border-top-left-radius: 40px;
@@ -187,13 +183,11 @@ main {
     display: flex;
     flex-direction: column;
 }
-
 .footer-head {
     display: flex;
     justify-content: space-around;
     padding-top: 4vh;
 }
-
 .bout p{
     font-size: 18px;
     color: white;
