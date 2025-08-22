@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "Nagpur Red Cross Blood Bank",
+    "location": "Nagpur, Maharashtra",
+    "contact": "0712-2541234",
+    "available": {
+      "A+": 20,
+      "B+": 15,
+      "O+": 30,
+      "AB+": 10
+    }
+  },
+  {
+    "id": 2,
+    "name": "Apollo Hospital Blood Bank",
+    "location": "Delhi",
+    "contact": "011-26512121",
+    "available": {
+      "A+": 10,
+      "B+": 5,
+      "O+": 12,
+      "AB+": 4
+    }
+  },
+  {
+    "id": 3,
+    "name": "AIIMS Blood Bank",
+    "location": "New Delhi",
+    "contact": "011-26593321",
+    "available": {
+      "A+": 25,
+      "B+": 20,
+      "O+": 18,
+      "AB+": 6
+    }
+  }
+]
