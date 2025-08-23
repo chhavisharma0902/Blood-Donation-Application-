@@ -27,26 +27,41 @@
     <div class="photo">
         <img src="./Images/regphoto.png">
     </div>
-    <div class="user-form">
-        <h1>Start Saving Lives</h1>
-        <form>
-            <i class="fas fa-user icon"></i>
-            <input type="text" placeholder="Name">
-            <br>
-            <i class="fas fa-envelope-square"></i>
-            <input type="email" placeholder="E-mail">
-            <br>
-            <i class="fas fa-lock"></i>
-            <input type="password" placeholder="Password" id="password_data">
-            <div class="safety" style="font-family: sans-serif; font-size: 20px;">
-                Enter Password
-            </div>
-            <div class="action-btn">
-                <button class="btn primary">Create Account</button>
-                <button class="btn">Skip</button>
-            </div>
-        </form>
+    <div class="form-container">
+
+    <!-- Page One -->
+    <div class="form-section active" id="page-one">
+      <h2>Select User Type</h2>
+      <div class="user-type">
+        <button onclick="selectUserType('Blood Bank')">Blood Bank</button>
+        <button onclick="selectUserType('Donor')">Donor</button>
+        <button onclick="selectUserType('Hospital')">Hospital</button>
+      </div>
     </div>
+
+    <!-- Page Two -->
+    <div class="form-section" id="page-two">
+      <h2 id="user-type-heading">User Form</h2>
+      <form>
+        <i class="fas fa-user icon"></i>
+        <input type="text" placeholder="Name" required>
+        <br>
+        <i class="fas fa-envelope-square"></i>
+        <input type="email" placeholder="E-mail" required>
+        <br>
+        <i class="fas fa-lock"></i>
+        <input type="password" placeholder="Password" id="password_data" required>
+        <div class="safety">
+          Enter Password
+        </div>
+        <div class="action-btn">
+          <button type="submit" class="btn primary">Create Account</button>
+          <button type="button" class="btn" onclick="goBack()">Back</button>
+        </div>
+      </form>
+    </div>
+
+  </div>
 </div>
 <script src="./register.js"></script>
 </body>
