@@ -1,19 +1,25 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto:wght@400;500&display=swap');
+
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin: 0;
   background: #f9f9f9;
 }
 
 header {
-  background: #e57373;   /* changed from #cd5c5c */
+  background: #e57373;   /* changed coral red */
   padding: 15px;
   color: white;
   text-align: center;
+  font-family: 'Playfair Display', serif; /* elegant heading font */
 }
 
-h2 {
+h1, h2 {
+  font-family: 'Playfair Display', serif; /* fancy serif style */
   text-align: center;
   margin-top: 20px;
+  color: #333;
 }
 
 table {
@@ -22,9 +28,17 @@ table {
   width: 80%;
   background: white;
   box-shadow: 0px 2px 6px rgba(0,0,0,0.2);
+  font-family: 'Roboto', sans-serif; /* clean table font */
 }
 
-th, td {
+th {
+  background: #e57373;
+  color: white;
+  font-weight: 600;
+  font-family: 'Playfair Display', serif; /* styled headings */
+}
+
+td {
   border: 1px solid #ddd;
   padding: 10px;
   text-align: center;
