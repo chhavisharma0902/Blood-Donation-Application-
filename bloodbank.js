@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  fetch("bloodbanks.json")   // make sure this file name matches exactly
+  fetch("bloodbanks.json") 
     .then(response => response.json())
     .then(data => {
       const tableBody = document.querySelector("#bloodbankTable tbody");
