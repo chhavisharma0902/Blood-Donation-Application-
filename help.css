@@ -29,7 +29,7 @@ header{
     float: left;
     padding-left: 30px;
     padding-top: 0px;
-    padding-bottom: 12%;
+    padding-bottom: 15%;
 
 }
 
@@ -185,7 +185,7 @@ main{
 
 
 
-/*Footer*/
+
 .sec {
     border-top-left-radius: 40px;
     background: black;
@@ -307,7 +307,7 @@ main{
         padding-right: 2px;
     }
 }
-   /*Footer*/
+   
         
    footer {
     position: relative;
@@ -320,7 +320,7 @@ main{
     width: 100%;
     padding-top: none;
     color: #fff;
-    /*padding: 5px 0px 5px 0px;*/
+   
 }
 
 .footer-content {
