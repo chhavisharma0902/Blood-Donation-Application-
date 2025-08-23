@@ -5,7 +5,7 @@ body {
 }
 
 header {
-  background: #cd5c5c;
+  background: #e57373;   /* changed from #cd5c5c */
   padding: 15px;
   color: white;
   text-align: center;
@@ -28,9 +28,4 @@ th, td {
   border: 1px solid #ddd;
   padding: 10px;
   text-align: center;
-}
-
-th {
-  background: #cd5c5c;
-  color: white;
 }
