@@ -12,16 +12,15 @@ const proceedBtn = document.getElementById('proceedBtn');
 
 userTypeButtons.forEach(btn => {
   btn.addEventListener('click', () => {
-    // Remove "selected" class from all buttons
+  
     userTypeButtons.forEach(b => b.classList.remove('selected'));
     
-    // Add "selected" class to the clicked button
+  
     btn.classList.add('selected');
 
-    // Store selected type (from data attribute)
+    
     selectedType = btn.getAttribute('data-type');
 
-    // Enable the "Proceed" button
     proceedBtn.disabled = false;
   });
 });
