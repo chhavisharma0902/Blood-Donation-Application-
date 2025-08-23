@@ -156,6 +156,12 @@ input{
     color: white;
 }
 
+.btn.selected {
+    background: white;
+    color: #F08080;
+    border: 2px solid #F08080;
+}
+
 .primary{
     font-size: medium;
     font-family:'Alegreya Sans SC', sans-serif;
