@@ -30,17 +30,20 @@
     <!-- Form Container -->
     <div class="user-form">
       <form id="multi-step-form">
-        <!-- Step 1: Select User Type -->
-        <div class="form-section active" id="page-one">
-          <h1>Select User Type</h1>
-          <div class="action-btn">
-            <button type="button" class="btn" onclick="selectUserType('Blood Bank')">Blood Bank</button>
-            <button type="button" class="btn" onclick="selectUserType('Donor')">Donor</button>
-          </div>
-          <div class="action-btn">
-            <button type="button" class="btn" onclick="selectUserType('Hospital')">Hospital</button>
-          </div>
-        </div>
+       <!-- Step 1: Select User Type -->
+<div class="form-section active" id="page-one">
+  <h1>Select User Type</h1>
+  <div class="action-btn">
+    <button type="button" class="btn user-type-btn" data-type="Blood Bank">Blood Bank</button>
+    <button type="button" class="btn user-type-btn" data-type="Donor">Donor</button>
+  </div>
+  <div class="action-btn">
+    <button type="button" class="btn user-type-btn" data-type="Hospital">Hospital</button>
+  </div>
+  <div class="action-btn">
+    <button type="button" class="btn primary" id="proceedBtn" disabled>Proceed</button>
+  </div>
+</div>
 
         <!-- Step 2: Input Details -->
         <div class="form-section" id="page-two">
