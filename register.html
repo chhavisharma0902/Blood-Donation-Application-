@@ -27,46 +27,47 @@
     <div class="photo">
         <img src="./Images/regphoto.png">
     </div>
-    <div class="form-container">
-    <!-- Single Form Element -->
-    <form id="multi-step-form">
-      <!-- Page One: User Type Selection -->
-      <div class="form-section active" id="page-one">
-        <h2>Select User Type</h2>
-        <div class="user-type">
-          <button type="button" onclick="selectUserType('Blood Bank')">Blood Bank</button>
-          <button type="button" onclick="selectUserType('Donor')">Donor</button>
-          <button type="button" onclick="selectUserType('Hospital')">Hospital</button>
-        </div>
-      </div>
-
-      <!-- Page Two: User Details -->
-      <div class="form-section" id="page-two">
-        <h2 id="user-type-heading">User Form</h2>
-
-        <!-- Hidden input to carry selected type -->
-        <input type="hidden" name="user_type" id="user_type">
-
-        <i class="fas fa-user icon"></i>
-        <input type="text" name="name" placeholder="Name" required>
-        <br>
-        <i class="fas fa-envelope-square"></i>
-        <input type="email" name="email" placeholder="E-mail" required>
-        <br>
-        <i class="fas fa-lock"></i>
-        <input type="password" name="password" placeholder="Password" id="password_data" required>
-
-        <div class="safety">
-          Enter Password
+    <!-- Form Container -->
+    <div class="user-form">
+      <form id="multi-step-form">
+        <!-- Step 1: Select User Type -->
+        <div class="form-section active" id="page-one">
+          <h1>Select User Type</h1>
+          <div class="action-btn">
+            <button type="button" class="btn" onclick="selectUserType('Blood Bank')">Blood Bank</button>
+            <button type="button" class="btn" onclick="selectUserType('Donor')">Donor</button>
+          </div>
+          <div class="action-btn">
+            <button type="button" class="btn" onclick="selectUserType('Hospital')">Hospital</button>
+          </div>
         </div>
 
-        <div class="action-btn">
-          <button type="submit" class="btn primary">Create Account</button>
-          <button type="button" class="btn" onclick="goBack()">Back</button>
+        <!-- Step 2: Input Details -->
+        <div class="form-section" id="page-two">
+          <h1 id="user-type-heading">User Registration</h1>
+
+          <input type="hidden" name="user_type" id="user_type">
+
+          <i class="fas fa-user"></i>
+          <input type="text" name="name" placeholder="Name" required>
+
+          <i class="fas fa-envelope-square"></i>
+          <input type="email" name="email" placeholder="E-mail" required>
+
+          <i class="fas fa-lock"></i>
+          <input type="password" name="password" placeholder="Password" id="password_data" required>
+
+          <div class="safety" id="password_strength">
+            Enter Password
+          </div>
+
+          <div class="action-btn">
+            <button type="submit" class="btn primary">Create Account</button>
+            <button type="button" class="btn" onclick="goBack()">Back</button>
+          </div>
         </div>
-      </div>
-    </form>
-  </div>
+      </form>
+    </div>
   </div>
 </div>
 <script src="./register.js"></script>
