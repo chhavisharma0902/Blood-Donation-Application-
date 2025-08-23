@@ -1,6 +1,6 @@
 "use strict";
 
-// To add scroll effect on the navbar
+
 const navLinks = document.querySelectorAll(".scroll");
 const navLinksArr = [...navLinks];
 
